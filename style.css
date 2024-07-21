@@ -1,0 +1,156 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+:root{
+    --primary-color:#220451;
+    --secondary-color:#f8f9fa;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+.flex{
+    display:flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.font-bold{
+    font-weight: bold;
+}
+section{
+    min-height: 50vh;
+    padding:50px 0;
+}
+
+body {
+    font-family:'Nunito', sans-serif;
+}
+.img {
+    max-height: 50px;
+}
+#header .title{
+    color: var(--primary-color);
+    background-color: #f8f9fa;
+    padding:10px 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+#header a{
+    text-decoration: none;
+    color:inherit;
+}
+
+/*-------------navbar---------------*/
+#navbar{
+    background-color: #220451;
+    color:white;
+}
+#navbar .navbar-toggler{
+    border:none;
+    outline:none;
+}
+#navbar .navbar-toggler-icon{
+    color: #fff !important;
+}
+#navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.nav-item{
+    margin:0 20px;
+    border-radius: 8px;
+    transition: 0.2s;
+    border:1.5px solid transparent;
+}
+.nav-item .nav-link{
+    color: white !important;
+}
+
+
+
+/*----------------hero-section------------*/
+.carousel-inner img {
+    width: 100%;
+    height: 400px;
+}
+.carousel-inner .carousel-item{
+    position:relative;
+    width: 100vw;
+    height: 400px;
+    background-image: url(./images/university.jpeg);
+    background-size: 100%;
+    background-position: center;
+}
+.carousel-inner .carousel-item::after{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:linear-gradient(transparent, transparent, rgba(0,0,0,0.7));
+}
+/*---------------------------news and events----------------*/
+
+.custom-card {
+  border: none; /* Remove default Bootstrap border */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add a more pronounced shadow */
+  transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.custom-card:hover {
+  transform: translateY(-5px); /* Lift card on hover */
+}
+
+.custom-card .card-title {
+  font-weight: 600;
+  color: var(--primary-color); /* Use your primary color */
+}
+
+.custom-card .card-text {
+  color: #555; /* Slightly darker text for better contrast */
+}
+
+.read-more-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px; /* Rounded corners */
+  transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+  background-color: darken(var(--primary-color), 10%); /* Darken on hover */
+}
+
+
+
+
+/*-----------------footer----------------*/
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+.footer h5{
+    font-weight: bold;
+    text-align: left;
+}
+
+.footer .links{
+    text-align: left;
+    display:flex;
+    justify-content: left;
+    flex-direction: column;
+}
+.footer .links li a{
+    color:#504f4f;
+}
