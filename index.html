@@ -4,21 +4,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Official website of [College Name]" />
+  <meta name="description" content="Official website of Dr. PD Patil College of Computer Science" />
   <title>Dr. P. D. Patil College of Computer Science</title>
   <!-- Bootstrap CSS -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
   <header id="header">
     <a class="" href="#">
-      <h2 class="text-center title">P. D. Patil College of Computer Science</h2>
+      <h2 class="text-center title">
+        P. D. Patil College of Computer Science
+      </h2>
     </a>
   </header>
-
 
   <!--Modal -->
   <div class="modal fade" id="admissionEnquiryModal" tabindex="-1" role="dialog"
@@ -26,7 +28,9 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="admissionEnquiryModalLabel">Admission Enquiry</h5>
+          <h5 class="modal-title" id="admissionEnquiryModalLabel">
+            Admission Enquiry
+          </h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -36,32 +40,36 @@
           <form>
             <div class="form-group">
               <label for="name">Name:</label>
-              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" />
             </div>
             <div class="form-group">
               <label for="email">Email:</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" />
             </div>
             <div class="form-group">
               <label for="phone">Phone:</label>
-              <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+              <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" />
             </div>
             <div class="form-group">
               <label for="phone">Course:</label>
               <select class="form-control" id="course-select">
                 <option value="Computer Science">Computer Science</option>
-                <option value="Mechanical Engineering">Mechanical Engineering</option>
-                <option value="Electrical Engineering">Electrical Engineering</option>
-                <option value="Electronics and Communication Engineering">Electronics and Communication Engineering
+                <option value="Mechanical Engineering">
+                  Mechanical Engineering
+                </option>
+                <option value="Electrical Engineering">
+                  Electrical Engineering
+                </option>
+                <option value="Electronics and Communication Engineering">
+                  Electronics and Communication Engineering
                 </option>
               </select>
             </div>
             <div class="row justify-content-center">
               <div class="col-md-8">
-                <input type="submit" class="btn btn-block btn-primary" value="Submit">
+                <input type="submit" class="btn btn-block btn-primary" value="Submit" />
               </div>
             </div>
-
           </form>
         </div>
       </div>
@@ -69,8 +77,7 @@
   </div>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top sticky-top shadow-sm" id="navbar">
-
-    <button style="margin-left: 85%;" class="navbar-toggler" type="button" data-toggle="collapse"
+    <button style="margin-left: 85%" class="navbar-toggler" type="button" data-toggle="collapse"
       data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -83,12 +90,36 @@
         <li class="nav-item">
           <a class="nav-link" href="#">About</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Admissions</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="admissionDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Admissions
+          </a>
+          <div class="dropdown-menu" aria-labelledby="admissionDropdown">
+            <a class="dropdown-item" href="#">Admission Process</a>
+            <a class="dropdown-item" href="#">Eligibility</a>
+            <a class="dropdown-item" href="#">Fees Structure</a>
+          </div>
         </li>
+
         <li class="nav-item">
           <a class="nav-link" href="#">Academics</a>
         </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="iqacDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            IQAC
+          </a>
+          <div class="dropdown-menu" aria-labelledby="iqacDropdown">
+            <a class="dropdown-item" href="#">AQAR</a>
+            <a class="dropdown-item" href="#">SSR</a>
+            <a class="dropdown-item" href="#">SOP</a>
+            <a class="dropdown-item" href="#">Community</a>
+            <a class="dropdown-item" href="#">College Feedback</a>
+            <!-- Add more admission links as needed -->
+          </div>
+        </li>
+
         <li class="nav-item">
           <a class="nav-link" href="#">News</a>
         </li>
@@ -96,14 +127,13 @@
           <a class="nav-link" href="#">Contact</a>
         </li>
         <li class="nav-item">
-          <button type="button" class="btn btn-primary" data-toggle="modal"
-            data-target="#admissionEnquiryModal">Admission
-            Enquiry</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#admissionEnquiryModal">
+            Admission Enquiry
+          </button>
         </li>
       </ul>
     </div>
   </nav>
-
 
   <!-- Carousel -->
   <div id="collegeCarousel" class="carousel slide" data-ride="carousel">
@@ -113,22 +143,22 @@
       <li data-target="#collegeCarousel" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
-      <div class="carousel-item active bg-gradient">
-        <img src="path_to_image1.jpg" class="d-block w-100 bg-primary" alt="First slide" />
-        <div class="carousel-caption d-none d-md-block">
-          <h3 class="font-bold">Welcome to P. D. Patil Collge of Computer Science</h3>
+      <div class="carousel-item active" style="background-image: url(./images/abstract-bg.jpg)">
+        <div class="carousel-caption d-md-block">
+          <h2 class="font-bold">
+            Welcome to P. D. Patil Collge of Computer Science
+          </h2>
           <p>Providing Quality Education Since [Year]</p>
         </div>
       </div>
-      <div class="carousel-item" style=" background-image: url(./images/university.jpeg);">
-        <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-item" style="background-image: url(./images/students.jpeg)">
+        <div class="carousel-caption d-md-block">
           <h3>Join Our Community</h3>
           <p>Explore Our Programs and Opportunities</p>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="path_to_image3.jpg" class="d-block w-100" alt="Third slide" />
-        <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-item" style="background-image: url(./images/students.jpeg)">
+        <div class="carousel-caption d-md-block">
           <h3>Excellence in Academics</h3>
           <p>Learn from the Best Faculty</p>
         </div>
@@ -145,112 +175,159 @@
   </div>
 
   <!-- Main Content Sections -->
-  <div class="container">
+  <div class="main">
     <!-- About Section -->
-    <section id="about">
-      <h2 class="text-center font-bold mb-5">About Us</h2>
+    <section id="about" >
+      <div class="container">
+      <h2 class="text-center font-bold mb-5"><span class="bg-underline-light">About Us</span></h2>
       <div class="row align-items-center">
         <div class="col-md-6">
           <img src="./images/students.jpeg" class="img-fluid rounded-sm" alt="About Us Image" />
         </div>
         <div class="col-md-6">
           <p>
-            P. D. Patil College of Computer Science is a prestigious institution offering quality education
-            in various fields. Our mission is to nurture students and prepare them
-            for successful careers. <b>We have a strong focus on practical learning and industry collaborations,
-              ensuring our graduates are well-equipped for the professional world.</b>
-            <b>Established in <mark>[Year]</mark>, we have a long history of academic excellence and a vibrant campus
-              community.</b>
+            P. D. Patil College of Computer Science is a prestigious
+            institution offering quality education in various fields. Our
+            mission is to nurture students and prepare them for successful
+            careers.
+            <b>We have a strong focus on practical learning and industry
+              collaborations, ensuring our graduates are well-equipped for the
+              professional world.</b>
+            <b>Established in <mark>[Year]</mark>, we have a long history of
+              academic excellence and a vibrant campus community.</b>
           </p>
         </div>
       </div>
-
-
+    </div>
     </section>
-
 
     <!-- Admissions Section -->
     <section id="admissions" class="mt-5">
-      <h2 class="text-center">Admissions</h2>
-      <p>
-        Join our vibrant community. Find out more about our admission process
-        and requirements.
-      </p>
+      <div class="container"> 
+        <div class="row justify-content-center align-items-center">
+        
+          <div class="col-md-6 text-center d-flex align-items-center"> 
+            <img src="./images/network.jpg" alt="" class="w-100 rounded-lg">
+          </div>
+          <div class="col-md-6 mt-3"> 
+            <h2><span class="bg-underline-dark">Admissions</span></h2>
+            <p>
+              Ready to embark on a journey of academic excellence? 
+              At Dr. PD Patil College of Computer Science, we welcome ambitious students who are eager to learn and grow. 
+              Discover the endless possibilities that await you.
+            </p>
+            <button class="btn btn-primary btn-lg">Apply Now</button>
+          </div>  
+        </div>
+      </div>
     </section>
+    
 
     <!-- Academics Section -->
-    <section id="academics" class="mt-5">
-      <h2 class="text-center w-bold">Academics</h2>
+    <section id="academics" class="bg-light">
+      <div class="container">
+      <h2 class="text-center w-bold"><span class="bg-underline-light">Academics</span></h2>
       <p>
         Explore our academic programs and discover how we can help you achieve
         your educational goals.
       </p>
+    </div>
     </section>
 
     <!-- News Section -->
-    <section id="news" class="mt-5">
-      <h2 class="text-center w-bold">Latest News</h2>
-      <p>
-        Stay updated with the latest news and events happening at [College
-        Name].
-      </p>
-
-      <div class="row mt-4">
-        <!-- News Card 1 -->
-        <div class="col-md-4">
-          <div class="custom-card">
-            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="News 1">
-            <div class="card-body">
-              <h5 class="card-title">News Title 1</h5>
-              <p class="card-text">Short description of news item 1. Lorem ipsum dolor sit amet.</p>
-              <a href="#" class="read-more-btn">Read More</a>
-            </div>
+    <section id="news" class="mt-5 container">
+      <div class="row justify-content-center">
+        <div class="col-md-5 card">
+          <h3 class="p-2 text-white shadow rounded">News</h3>
+          <div class="news-content">
+            <marquee direction="up" scrollamount="10" height="200px">
+              <ul>
+                <li>
+                  News item 1: Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit.
+                </li>
+                <li>
+                  News item 2: Sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
+                </li>
+                <li>
+                  News item 3: Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco.
+                </li>
+                <li>
+                  News item 4: Duis aute irure dolor in reprehenderit in
+                  voluptate velit esse.
+                </li>
+                <li>
+                  News item 5: Excepteur sint occaecat cupidatat non proident,
+                  sunt in culpa.
+                </li>
+              </ul>
+            </marquee>
           </div>
         </div>
-
-
-        <!-- News Card 2 -->
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="News 2">
-            <div class="card-body">
-              <h5 class="card-title">News Title 2</h5>
-              <p class="card-text">Short description of news item 2. Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit.</p>
-              <a href="#" class="btn news-card-btn">Read More</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- News Card 3 (Event) -->
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Event 1">
-            <div class="card-body">
-              <h5 class="card-title">Upcoming Event</h5>
-              <p class="card-text">Details about an upcoming college event. Lorem ipsum dolor sit amet.</p>
-              <a href="#" class="btn news-card-btn">Learn More</a>
-            </div>
+        <div class="col-md-5 card">
+          <h3 class="p-2 text-white shadow rounded">Updates</h3>
+          <div class="updates-content">
+            <p>Update 1: New semester schedule released.</p>
+            <p>
+              Update 2: Online classes will continue until further notice.
+            </p>
+            <p>
+              Update 3: Campus renovation project completion expected next
+              month.
+            </p>
+            <p>Update 4: New research lab inaugurated.</p>
+            <p>Update 5: Scholarship application deadlines approaching.</p>
           </div>
         </div>
       </div>
-
-
     </section>
     <!-- Contact Section -->
-    <section id="contact" class="mt-5">
-      <h2 class="text-center fw-bolder">Contact Us</h2>
-      <p>Have questions? Get in touch with us through our contact page.</p>
-    </section>
   </div>
-
+  <section id="contact" class="row justify-content-center">
+    <div class="row col-md-10">
+      <div class="col-md-5 bg-light p-4 rounded-lg">
+        <h2>
+          <span class="font-bold bg-underline-light">
+            Contact Us</span>
+        </h2>
+        <ul class="list-unstyled links">
+          <li class="row align-items-center">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+              </svg>123 College Street City, State, Zip Code
+            </a>
+          </li>
+          <li class="row align-items-center">
+            <a href="tel:+919876543210" class="text-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+              </svg>+91 9876543210</a>
+          </li>
+          <li class="row align-items-center">
+            <a href="mailto:info@[College Name].edu" class="text-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path
+                  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+              </svg>info@pdpatil.edu.in</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-5"></div>
+    </div>
+  </section>
   <!-- Footer -->
-  <footer class="footer mt-5 py-3 bg-light">
+  <footer class="footer py-3 bg-light">
     <div class="container">
       <div class="row">
-        <div class="col-md-3">College Name</div>
         <div class="col-md-3">
-          <h5>About [College Name]</h5>
+          <h5>About Dr. P. D. Patil College of Computer Science</h5>
           <ul class="list-unstyled links">
             <li><a href="#">Our Mission</a></li>
             <li><a href="#">Leadership</a></li>
@@ -274,8 +351,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                 <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
-              </svg>123 College Street
-              City, State, Zip Code
+              </svg>123 College Street City, State, Zip Code
             </li>
             <li>
               <a href="tel:+919876543210" class="text-start">
@@ -291,14 +367,15 @@
                   class="bi bi-envelope-fill" viewBox="0 0 16 16">
                   <path
                     d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
-                </svg>info@[College Name].edu</a>
+                </svg>info@pdpatil.edu.in</a>
             </li>
           </ul>
         </div>
       </div>
       <hr />
       <div class="text-center">
-        <span class="text-muted">&copy; 2024 P. D. Patil College of Computer Science. All Rights Reserved.</span>
+        <span class="text-muted">&copy; 2024 P. D. Patil College of Computer Science. All Rights
+          Reserved.</span>
       </div>
     </div>
   </footer>
@@ -307,6 +384,10 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+
+  </script>
 </body>
 
 </html>
